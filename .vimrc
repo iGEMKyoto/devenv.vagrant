@@ -23,6 +23,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 "NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'davidhalter/jedi-vim'
+NeoBundle 'vim-jp/vimdoc-ja'
 
 " You can specify revision/branch/tag.
 "NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -38,8 +39,13 @@ filetype plugin indent on
 NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
+" Japanese Help
+set helplang=ja,en
+
 set expandtab
 set ts=2
 set sw=2
+
+" For Javascript
 autocmd FileType javascript setl ts=2
 autocmd FileType javascript setl sw=2
